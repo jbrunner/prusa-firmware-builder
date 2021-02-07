@@ -1,8 +1,9 @@
 FROM debian
 RUN apt-get update && apt-get install -y \
   gawk \
+  python3 \
   unzip \
-  xxd \
-  python3
+  wget \
+  xxd
 WORKDIR "/app"
 CMD ["./build.sh"]
