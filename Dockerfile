@@ -6,4 +6,4 @@ RUN apt-get update && apt-get install -y \
   wget \
   xxd
 WORKDIR "/app"
-CMD ["./build.sh"]
+ENTRYPOINT ["./build.sh"]
